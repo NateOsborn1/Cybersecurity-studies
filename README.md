@@ -59,6 +59,34 @@ This is formatted to offer both a technical and practical study guide
 
 - #### Ports and Protocols
    Common protocols (e.g., HTTP, HTTPS, FTP, SSH, DNS, etc.), their associated ports, and how they're used.
+  - ##### Protocols
+    Protocols define the rules and conventions for data exchange between devices, specifying things like how data
+    is formatted, how errors are detected and corrected, and how connections are managed. Some common protocols include:
+    * HTTP (Hypertext Transfer Protocol) - Port 80: For web traffic.
+    * HTTPS (HTTP Secure) - Port 443: For encrypted web traffic.
+    * FTP (File Transfer Protocol) - Ports 20/21: Used for filetransfers.
+    * DNS (Domain Name System) - Port 53: Converts human-readable domain names into IP addresses.
+    * SSH (Secure Shell) - Port 22: Allows secure remote access to devices.
+    * SMTP (Simple Mail Transfer Protocol) - Port 25: For email sending.
+  - ##### Ports
+    Ports are numbered endpoints (0-65535) on devices that receive and send data associated with a protocol. These are divided into:
+    * Well-Known Ports (0-1023): Reserved for standard protocols like HTTP (80), FTP (21), etc
+    * Registered Ports (1024-49151): Used by comapnies for proprietary applications.
+    * Dynamic or Private Ports (49152-65535): Used by client applications to initiate connections (e.g., web browsers).
+  - ##### TCP and UDP
+    Two main types of communication:
+    * TCP (Transmission Control Protocol): Ensures reliable, ordered data delivery. Good for applications where data integrity is crucial, like web browsing and email.
+    * UDP (User Datagram Protocol): Focuses on speed over reliability, commonly used for streaming and gaming where a few dropped packets don't impact the overall experience.
+  - ##### Testing
+    Open Ports:
+    * Port Scanning: Use tools like nmap to discover open ports on a device. Running nmap [IP address] will show which ports are open and which protocols are in use.
+
+    Protocols in Action:
+    * Wireshark: Capture packets on your network to see protocols like HTTP, DNS, and FTP in real-time. Look for source and destination IPs, ports, and observe protocol-specific behavior (e.g., HTTP GET requests or DNS queries).
+
+    Testing Connections:
+    * Telnet: Open a terminal and use telnet [IP address] [port] to test whether a port is open and receiving connections. 
+    
 
 ### 2. OSI and TCP/IP Models
 - #### OSI Model
