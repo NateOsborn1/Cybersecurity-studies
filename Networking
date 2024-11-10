@@ -1,0 +1,15 @@
+TOC
+[Networking Basics](#networking-basics)
+
+
+
+
+
+
+# Networking Basics 
+1. IP Addressing: Understand IPv4 and IPv6, including subnetting and CIDR notation.
+
+2. MAC Addresses: Know how devices are uniquely identified at the hardware level within local networks.
+
+3. Ports and Protocols: Common protocols (e.g., HTTP, HTTPS, FTP, SSH, DNS, etc.) their associated ports, 
+and how they're used.
