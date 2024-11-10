@@ -127,5 +127,3 @@ This is formatted to offer both a technical and practical study guide
    Learn how intrusion detection/prevention systems (IDS/IPS) work and how they monitor network traffic for suspicious activity.
 
 ---
-
-This foundation in networking will serve you well as you dive deeper into cybersecurity, where you’ll encounter advanced protocols, specialized security tools, and threat response techniques.
