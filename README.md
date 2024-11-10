@@ -1,6 +1,6 @@
 # Networking Fundamentals for Cybersecurity
 
-To build a solid foundation in networking for cybersecurity, you'll want to focus on these core areas:
+This is formatted to offer both a technical and practical study guide
 
 ## Table of Contents
 - [1. Networking Basics](#1-networking-basics)
@@ -29,9 +29,33 @@ To build a solid foundation in networking for cybersecurity, you'll want to focu
 ### 1. Networking Basics
 - #### IP Addressing
    Understand IPv4 and IPv6, including subnetting and CIDR notation.
+  - ##### IPv4
+    Consists of 32-bit addresses, divided into four 8-bit sections separated by periods (e.g., 192.168.1.1).
+    This format supports around 4.3 billion addresses.
+  - ##### IPv6
+    Uses 128-bit addresses to allow more devices. They look much longer (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+  - ##### Subnetting
+    Splits IP networks into smaller sections, allowing efficient allocation of addresses. For example, 192.168.1.0/24
+    is a subnet that divides the IP space into chunks of 256 addresses.
+  - ##### CIDR Notation
+    Represents IP ranges compactly (e.g., 192.168.1.0/24 shows a block where 24 bits are fixed, and the remaining bits
+    are for device addresses).
+  - ##### Testing:
+    Ping: using the ping command in terminal to test connectivity to an IP address, like ping 8.8.8.8 (Google DNS). It will show data packets being sent and received.
+
+    Traceroute: Run tracert [IP address] (on Windows) or traceroute [IP address] (on macOS/Linux) to see the path data      takes across networks to reach a target IP.
 
 - #### MAC Addresses
-   Know how devices are uniquely identified at the hardware level within local networks.
+   Know how devices are uniquely identified at the hardware level within local networks. Operates at a Layer 2
+   (Data Link) of the OSI model, which manages local network communication. A MAC address typically looks like
+   00:1A:2B:3C:4B:5E.
+
+   They are critical in switching environments because switches use them to direct data to the correct device within a network
+   Unlike IP addresses, MAC addresses don't change. They're assigned by the device's manufacturer and are permanently associated with that piece of hardware.
+  - ##### Testing:
+    Find MAC Address: Use the command ipconfig /all on Windows or ifconfig /ip link on macOS/Linux to view the view the MAC addresses of your network interfaces.
+
+    ARP (Address Resolution Protocol): Try using arp -a to see a table of IP addresses and their associated MAC addresses in your local network, showing how devices communicate at both the IP and MAC levels.
 
 - #### Ports and Protocols
    Common protocols (e.g., HTTP, HTTPS, FTP, SSH, DNS, etc.), their associated ports, and how they're used.
